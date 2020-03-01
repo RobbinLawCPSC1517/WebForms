@@ -10,43 +10,43 @@ namespace WebFormsDemo
     public partial class PersonForm : System.Web.UI.Page
     {
         
-        private static List<Person> StudentData = new List<Person>();
+        private static List<Person> PersonData = new List<Person>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             MessageLabel.Text = "";
         }
-        protected void AddStudent_Click(object sender, EventArgs e)
+        protected void Add_Click(object sender, EventArgs e)
         {
             if (Page.IsValid)
             {
                 bool found = false;
-                foreach (var item in StudentData)
+                foreach (var item in PersonData)
                 {
-                    if (item.StudentID == int.Parse(StudentID.Text))
+                    if (item.ID == int.Parse(ID.Text))
                     {
                         found = true;
                     }
                 }
                 if (found)
                 {
-                    MessageLabel.Text = "Student already on record. Data not added.";
+                    MessageLabel.Text = "Record already exists. Data not added.";
                 }
                 else
                 {
-                    Person newitem = new Person(int.Parse(StudentID.Text), StudentName.Text, double.Parse(Credits.Text), EmergencyPhoneNumber.Text);
-                    StudentData.Add(newitem);
-                    StudentList.DataSource = StudentData;
-                    StudentList.DataBind();
+                    Person newitem = new Person(int.Parse(ID.Text), Name.Text, double.Parse(Salary.Text), Phone.Text);
+                    PersonData.Add(newitem);
+                    PersonList.DataSource = PersonData;
+                    PersonList.DataBind();
                 }
             }
         }
         protected void Clear_Click(object sender, EventArgs e)
         {
-            StudentID.Text = "";
-            StudentName.Text = "";
-            Credits.Text = "";
-            EmergencyPhoneNumber.Text = "";
+            ID.Text = "";
+            Name.Text = "";
+            Salary.Text = "";
+            Phone.Text = "";
         }
     }
 }

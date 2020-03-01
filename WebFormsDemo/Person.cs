@@ -7,25 +7,25 @@ namespace WebFormsDemo
 {
     public class Person
     {
-        public int StudentID { get; set; }
-        public string StudentName { get; set; }
-        public double Credits { get; set; }
-        public string EmergencyPhoneNumber { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public double Salary { get; set; }
+        public string Phone { get; set; }
         public Person()
         {
             //
             // TODO: Add constructor logic here
             //
         }
-        public Person(int studentid,
-                        string studentname,
-                        double credits,
-                        string emergencyphonenumber)
+        public Person(int id,
+                        string name,
+                        double salary,
+                        string phone)
         {
-            StudentID = studentid;
-            StudentName = studentname;
-            Credits = credits;
-            EmergencyPhoneNumber = emergencyphonenumber;
+            ID = id;
+            Name = name;
+            Salary = salary;
+            Phone = phone;
         }
     }
 }
