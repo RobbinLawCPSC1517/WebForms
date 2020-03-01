@@ -44,17 +44,37 @@
                 <asp:Label ID="Label1" runat="server" Text="Student ID"
                      AssociatedControlID="StudentID"></asp:Label>
                 <asp:TextBox ID="StudentID" runat="server" ></asp:TextBox>
+            </fieldset>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <fieldset class="form-horizontal">
                   <asp:Label ID="Label2" runat="server" Text="Name"
                      AssociatedControlID="StudentName"></asp:Label>
                 <asp:TextBox ID="StudentName" runat="server"></asp:TextBox>
+            </fieldset>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <fieldset class="form-horizontal">
                   <asp:Label ID="Label3" runat="server" Text="Credits"
                      AssociatedControlID="Credits"></asp:Label>
                 <asp:TextBox ID="Credits" runat="server"></asp:TextBox>
+            </fieldset>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <fieldset class="form-horizontal">
                   <asp:Label ID="Label4" runat="server" Text="Emergency PhoneNumber"
                      AssociatedControlID="EmergencyPhoneNumber"></asp:Label>
                 <asp:TextBox ID="EmergencyPhoneNumber" runat="server"> </asp:TextBox>
             </fieldset>
         </div>
+    </div>
+    <div class="row">
         <div class="col-md-6">
             <asp:LinkButton ID="AddStudent" runat="server" OnClick="AddStudent_Click">Add Student</asp:LinkButton>&nbsp;&nbsp;
             <asp:LinkButton ID="Clear" runat="server" CausesValidation="false" OnClick="Clear_Click">Clear</asp:LinkButton>
