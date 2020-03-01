@@ -37,17 +37,17 @@
                  ValidationExpression="[1-9][0-9][0-9].[1-9][0-9][0-9].[0-9][0-9][0-9][0-9]"></asp:RegularExpressionValidator>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <fieldset class="form-horizontal">
-                <legend>Student Data Entry</legend>
+    <%--<legend>Student Data Entry</legend>--%>
+    <div class="row row-cols-2">
+        <div class="col text-right">
                 <asp:Label ID="Label1" runat="server" Text="Student ID"
                      AssociatedControlID="StudentID"></asp:Label>
+        </div>
+        <div class="col text-left">
                 <asp:TextBox ID="StudentID" runat="server" ></asp:TextBox>
-            </fieldset>
         </div>
     </div>
-    <div class="row">
+    <div class="row row-cols-2">
         <div class="col-md-12">
             <fieldset class="form-horizontal">
                   <asp:Label ID="Label2" runat="server" Text="Name"
