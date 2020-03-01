@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <fieldset class="form-horizontal">
                 <legend>Student Data Entry</legend>
                 <asp:Label ID="Label1" runat="server" Text="Student ID"
@@ -48,7 +48,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <fieldset class="form-horizontal">
                   <asp:Label ID="Label2" runat="server" Text="Name"
                      AssociatedControlID="StudentName"></asp:Label>
