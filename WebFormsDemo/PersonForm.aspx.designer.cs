@@ -24,22 +24,22 @@ namespace WebFormsDemo
         protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
 
         /// <summary>
-        /// RequiredFieldID control.
+        /// RequiredFieldSIN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldID;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldSIN;
 
         /// <summary>
-        /// CompareID control.
+        /// CompareSIN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareID;
+        protected global::System.Web.UI.WebControls.CompareValidator CompareSIN;
 
         /// <summary>
         /// RequiredFieldName control.
@@ -96,13 +96,13 @@ namespace WebFormsDemo
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// ID control.
+        /// SIN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ID;
+        protected global::System.Web.UI.WebControls.TextBox SIN;
 
         /// <summary>
         /// Label2 control.
@@ -186,12 +186,12 @@ namespace WebFormsDemo
         protected global::System.Web.UI.WebControls.Label MessageLabel;
 
         /// <summary>
-        /// PersonList control.
+        /// PeopleGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView PersonList;
+        protected global::System.Web.UI.WebControls.GridView PeopleGridView;
     }
 }

@@ -12,12 +12,12 @@
         <div class="col-md-12 text-left">
             <asp:ValidationSummary ID="ValidationSummary1" runat="server"
                  HeaderText="Please correct the following issues with your current data entry" />
-            <asp:RequiredFieldValidator ID="RequiredFieldID" runat="server" 
-                ErrorMessage="ID is a required field" 
-                SetFocusOnError="true" ControlToValidate="ID" Display="None"></asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="CompareID" runat="server"
-                 ErrorMessage="ID is a number greater than 0" Operator="GreaterThan" Type="Integer"
-                 ValueToCompare="0"  SetFocusOnError="true" ControlToValidate="ID" Display="None"></asp:CompareValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldSIN" runat="server" 
+                ErrorMessage="SIN is a required field" 
+                SetFocusOnError="true" ControlToValidate="SIN" Display="None"></asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareSIN" runat="server"
+                 ErrorMessage="SIN is a number greater than 0" Operator="GreaterThan" Type="Integer"
+                 ValueToCompare="0"  SetFocusOnError="true" ControlToValidate="SIN" Display="None"></asp:CompareValidator>
              <asp:RequiredFieldValidator ID="RequiredFieldName" runat="server" 
                 ErrorMessage="Name is a required field" 
                 SetFocusOnError="true" ControlToValidate="Name" Display="None"></asp:RequiredFieldValidator>
@@ -40,11 +40,11 @@
     <%--<legend>Student Data Entry</legend>--%>
     <div class="row">
         <div class="col-md-2 text-right">
-                <asp:Label ID="Label1" runat="server" Text="ID"
-                     AssociatedControlID="ID"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="SIN"
+                     AssociatedControlID="SIN"></asp:Label>
         </div>
         <div class="col-md-2 text-left">
-                <asp:TextBox ID="ID" runat="server" ></asp:TextBox>
+                <asp:TextBox ID="SIN" runat="server" ></asp:TextBox>
         </div>
     </div>
     <div class="row">
@@ -58,7 +58,7 @@
     </div>
     <div class="row">
         <div class="col-md-2 text-right">
-                  <asp:Label ID="Label3" runat="server" Text="Salary/hr"
+                  <asp:Label ID="Label3" runat="server" Text="Salary/Hr"
                      AssociatedControlID="Salary"></asp:Label>
         </div>
         <div class="col-md-2 text-left">
@@ -83,7 +83,7 @@
             <br/><br/>
             <asp:Label ID="MessageLabel" runat="server" ></asp:Label>
             <br/><br/>
-            <asp:GridView ID="PersonList" runat="server"></asp:GridView>
+            <asp:GridView ID="PeopleGridView" runat="server"></asp:GridView>
         </div>
     </div>
     <script src="Scripts/bootwrap-freecode.js"></script>

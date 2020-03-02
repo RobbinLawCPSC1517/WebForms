@@ -7,7 +7,7 @@ namespace WebFormsDemo
 {
     public class Person
     {
-        public int ID { get; set; }
+        public int SIN { get; set; }
         public string Name { get; set; }
         public double Salary { get; set; }
         public string Phone { get; set; }
@@ -17,12 +17,12 @@ namespace WebFormsDemo
             // TODO: Add constructor logic here
             //
         }
-        public Person(int id,
+        public Person(int sin,
                         string name,
                         double salary,
                         string phone)
         {
-            ID = id;
+            SIN = sin;
             Name = name;
             Salary = salary;
             Phone = phone;

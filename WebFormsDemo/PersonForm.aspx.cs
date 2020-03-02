@@ -10,7 +10,7 @@ namespace WebFormsDemo
     public partial class PersonForm : System.Web.UI.Page
     {
         
-        private static List<Person> PersonData = new List<Person>();
+        private static List<Person> People = new List<Person>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,32 +18,33 @@ namespace WebFormsDemo
         }
         protected void Add_Click(object sender, EventArgs e)
         {
-            if (Page.IsValid)
-            {
-                bool found = false;
-                foreach (var item in PersonData)
-                {
-                    if (item.ID == int.Parse(ID.Text))
-                    {
-                        found = true;
-                    }
-                }
-                if (found)
-                {
-                    MessageLabel.Text = "Record already exists. Data not added.";
-                }
-                else
-                {
-                    Person newitem = new Person(int.Parse(ID.Text), Name.Text, double.Parse(Salary.Text), Phone.Text);
-                    PersonData.Add(newitem);
-                    PersonList.DataSource = PersonData;
-                    PersonList.DataBind();
-                }
-            }
+            MessageLabel.Text = "SIN = " + SIN.Text + " Name = " + Name.Text;
+            //if (Page.IsValid)
+            //{
+            //    bool found = false;
+            //    foreach (var item in People)
+            //    {
+            //        if (item.SIN == int.Parse(SIN.Text))
+            //        {
+            //            found = true;
+            //        }
+            //    }
+            //    if (found)
+            //    {
+            //        MessageLabel.Text = "Record already exists.";
+            //    }
+            //    else
+            //    {
+            //        Person newitem = new Person(int.Parse(SIN.Text), Name.Text, double.Parse(Salary.Text), Phone.Text);
+            //        People.Add(newitem);
+            //        PeopleGridView.DataSource = People;
+            //        PeopleGridView.DataBind();
+            //    }
+            //}
         }
         protected void Clear_Click(object sender, EventArgs e)
         {
-            ID.Text = "";
+            SIN.Text = "";
             Name.Text = "";
             Salary.Text = "";
             Phone.Text = "";
