@@ -33,13 +33,13 @@ namespace WebFormsDemo
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldSIN;
 
         /// <summary>
-        /// CompareSIN control.
+        /// RegularExpressionSIN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareSIN;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionSIN;
 
         /// <summary>
         /// RequiredFieldName control.

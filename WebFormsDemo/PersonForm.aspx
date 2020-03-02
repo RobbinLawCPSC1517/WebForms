@@ -16,9 +16,13 @@
             <asp:RequiredFieldValidator ID="RequiredFieldSIN" runat="server" 
                 ErrorMessage="SIN is a required field" 
                 SetFocusOnError="true" ControlToValidate="SIN" Display="None"></asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="CompareSIN" runat="server"
+            <asp:RegularExpressionValidator ID="RegularExpressionSIN" runat="server" 
+                ErrorMessage="SIN is invalid (ex. 777-888-999)"
+                 SetFocusOnError="true" ControlToValidate="SIN" Display="None"
+                 ValidationExpression="[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9]"></asp:RegularExpressionValidator>
+            <%--<asp:CompareValidator ID="CompareSIN" runat="server"
                  ErrorMessage="SIN is a number greater than 0" Operator="GreaterThan" Type="Integer"
-                 ValueToCompare="0"  SetFocusOnError="true" ControlToValidate="SIN" Display="None"></asp:CompareValidator>
+                 ValueToCompare="0"  SetFocusOnError="true" ControlToValidate="SIN" Display="None"></asp:CompareValidator>--%>
 
              <asp:RequiredFieldValidator ID="RequiredFieldName" runat="server" 
                 ErrorMessage="Name is a required field" 
@@ -50,54 +54,54 @@
     </div>
     <%--<legend>Student Data Entry</legend>--%>
     <div class="row">
-        <div class="col-md-2 text-right">
+        <div class="col-md-4 text-right">
                 <asp:Label ID="Label1" runat="server" Text="SIN"
                      AssociatedControlID="SIN"></asp:Label>
         </div>
-        <div class="col-md-2 text-left">
+        <div class="col-md-4 text-left">
                 <asp:TextBox ID="SIN" runat="server" ></asp:TextBox>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-2 text-right">
+        <div class="col-md-4 text-right">
                   <asp:Label ID="Label2" runat="server" Text="Name"
                      AssociatedControlID="Name"></asp:Label>
         </div>
-        <div class="col-md-2 text-left">
+        <div class="col-md-4 text-left">
                 <asp:TextBox ID="Name" runat="server"></asp:TextBox>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-2 text-right">
+        <div class="col-md-4 text-right">
                 <asp:Label ID="LabelAge" runat="server" Text="Age"
                      AssociatedControlID="Age"></asp:Label>
         </div>
-        <div class="col-md-2 text-left">
+        <div class="col-md-4 text-left">
                 <asp:TextBox ID="Age" runat="server" ></asp:TextBox>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-2 text-right">
+        <div class="col-md-4 text-right">
                   <asp:Label ID="Label3" runat="server" Text="Wage/Hr"
                      AssociatedControlID="Wage"></asp:Label>
         </div>
-        <div class="col-md-2 text-left">
+        <div class="col-md-4 text-left">
                 <asp:TextBox ID="Wage" runat="server"></asp:TextBox>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-2 text-right">
+        <div class="col-md-4 text-right">
                   <asp:Label ID="Label4" runat="server" Text="Phone"
                      AssociatedControlID="Phone"></asp:Label>
         </div>
-        <div class="col-md-2 text-left">
+        <div class="col-md-4 text-left">
                 <asp:TextBox ID="Phone" runat="server"> </asp:TextBox>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-4">
         </div>
-        <div class="col-md-2 text-left">
+        <div class="col-md-4 text-left">
             <asp:LinkButton ID="Add" runat="server" OnClick="Add_Click">Add Person</asp:LinkButton>&nbsp;&nbsp;
             <asp:LinkButton ID="Clear" runat="server" CausesValidation="false" OnClick="Clear_Click">Clear</asp:LinkButton>
             <br/><br/>

@@ -24,7 +24,7 @@ namespace WebFormsDemo
                 bool found = false;
                 foreach (var item in People)
                 {
-                    if (item.SIN == int.Parse(SIN.Text))
+                    if (item.SIN == SIN.Text)
                     {
                         found = true;
                     }
@@ -35,7 +35,7 @@ namespace WebFormsDemo
                 }
                 else
                 {
-                    Person newitem = new Person(int.Parse(SIN.Text), Name.Text, int.Parse(Age.Text), double.Parse(Wage.Text), Phone.Text);
+                    Person newitem = new Person(SIN.Text, Name.Text, int.Parse(Age.Text), double.Parse(Wage.Text), Phone.Text);
                     People.Add(newitem);
                     PeopleGridView.DataSource = People;
                     PeopleGridView.DataBind();
