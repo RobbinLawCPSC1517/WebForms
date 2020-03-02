@@ -86,5 +86,5 @@
             <asp:GridView ID="PeopleGridView" runat="server"></asp:GridView>
         </div>
     </div>
-    <script src="Scripts/bootwrap-freecode.js"></script>
+    <%--<script src="Scripts/bootwrap-freecode.js"></script>--%>
 </asp:Content>
