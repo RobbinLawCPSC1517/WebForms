@@ -9,7 +9,8 @@ namespace WebFormsDemo
     {
         public int SIN { get; set; }
         public string Name { get; set; }
-        public double Salary { get; set; }
+        public int Age { get; set; }
+        public double Wage { get; set; }
         public string Phone { get; set; }
         public Person()
         {
@@ -19,12 +20,14 @@ namespace WebFormsDemo
         }
         public Person(int sin,
                         string name,
-                        double salary,
+                        int age,
+                        double wage,
                         string phone)
         {
             SIN = sin;
             Name = name;
-            Salary = salary;
+            Age = age;
+            Wage = wage;
             Phone = phone;
         }
     }
