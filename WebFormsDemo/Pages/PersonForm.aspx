@@ -20,10 +20,7 @@
                 ErrorMessage="SIN is invalid (ex. 777-888-999)"
                  SetFocusOnError="true" ControlToValidate="SIN" Display="None"
                  ValidationExpression="[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9]"></asp:RegularExpressionValidator>
-            <%--<asp:CompareValidator ID="CompareSIN" runat="server"
-                 ErrorMessage="SIN is a number greater than 0" Operator="GreaterThan" Type="Integer"
-                 ValueToCompare="0"  SetFocusOnError="true" ControlToValidate="SIN" Display="None"></asp:CompareValidator>--%>
-
+            
              <asp:RequiredFieldValidator ID="RequiredFieldName" runat="server" 
                 ErrorMessage="Name is a required field" 
                 SetFocusOnError="true" ControlToValidate="Name" Display="None"></asp:RequiredFieldValidator>
@@ -52,7 +49,7 @@
                  ValidationExpression="[1-9][0-9][0-9].[1-9][0-9][0-9].[0-9][0-9][0-9][0-9]"></asp:RegularExpressionValidator>
         </div>
     </div>
-    <%--<legend>Student Data Entry</legend>--%>
+ 
     <div class="row">
         <div class="col-md-4 text-right">
                 <asp:Label ID="Label1" runat="server" Text="SIN"
