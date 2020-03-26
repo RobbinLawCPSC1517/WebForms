@@ -14,9 +14,7 @@ namespace WebFormsDemo
         public string Phone { get; set; }
         public Person()
         {
-            //
-            // TODO: Add constructor logic here
-            //
+         
         }
         public Person(string sin,
                         string name,
