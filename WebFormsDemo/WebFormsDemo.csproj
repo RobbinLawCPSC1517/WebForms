@@ -117,6 +117,8 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\Ex05.aspx" />
+    <Content Include="Pages\InClass03.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -271,6 +273,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ex05.aspx.cs">
+      <DependentUpon>Ex05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ex05.aspx.designer.cs">
+      <DependentUpon>Ex05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InClass03.aspx.cs">
+      <DependentUpon>InClass03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\InClass03.aspx.designer.cs">
+      <DependentUpon>InClass03.aspx</DependentUpon>
     </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Pages\PersonForm.aspx.cs">

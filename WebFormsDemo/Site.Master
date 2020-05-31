@@ -66,6 +66,20 @@
                                             PersonForm
                                     </a>
                                 </div>
+                                <div class="dropdown-menu" aria-labelledby="navbarSubMenu">
+                                    <a class="dropdown-item"
+                                            href="~/Pages/Ex05.aspx"
+                                            style="color:black" runat="server">
+                                            Exercise 05
+                                    </a>
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="navbarSubMenu">
+                                    <a class="dropdown-item"
+                                            href="~/Pages/InClass03.aspx"
+                                            style="color:black" runat="server">
+                                            InClass 03
+                                    </a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="~/Default.aspx"
