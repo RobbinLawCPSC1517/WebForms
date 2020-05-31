@@ -105,31 +105,22 @@ namespace WebFormsDemo
         protected global::System.Web.UI.WebControls.TextBox Phone;
 
         /// <summary>
-        /// Add control.
+        /// Add1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Add;
+        protected global::System.Web.UI.WebControls.Button Add1;
 
         /// <summary>
-        /// Clear control.
+        /// Clear1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Clear;
-
-        /// <summary>
-        /// PeopleGridView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView PeopleGridView;
+        protected global::System.Web.UI.WebControls.Button Clear1;
 
         /// <summary>
         /// MessageLabel1 control.
@@ -139,5 +130,14 @@ namespace WebFormsDemo
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl MessageLabel1;
+
+        /// <summary>
+        /// PeopleGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView PeopleGridView;
     }
 }

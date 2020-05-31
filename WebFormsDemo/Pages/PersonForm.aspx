@@ -5,7 +5,7 @@
     </div>
      <div class="row">
         <div class="col-md-12 alert alert-info">
-            This demo will show basic web form construction, data collection with validation, and display.
+            This demo will show basic web form construction, data collection with validation, and display, but no database.
         </div>
     </div>
     <div class="row">
@@ -53,16 +53,12 @@
                 <asp:TextBox ID="Phone" runat="server"> </asp:TextBox>
         </div>
     </div>
+    <br />
     <div class="row">
-        <div class="col-md-4">
-        </div>
+        <div class="col-md-4"></div>
         <div class="col-md-4 text-left">
-            <asp:LinkButton ID="Add" runat="server" OnClick="Add_Click">Add Person</asp:LinkButton>&nbsp;&nbsp;
-            <asp:LinkButton ID="Clear" runat="server" CausesValidation="false" OnClick="Clear_Click">Clear</asp:LinkButton>
-            <br/><br/>
-            <%--<asp:Label ID="MessageLabel" runat="server" ></asp:Label>--%>
-            <br/><br/>
-            <asp:GridView ID="PeopleGridView" runat="server"></asp:GridView>
+            <asp:Button ID="Add1" runat="server" OnClick="Add_Click" Text="Add Person"/>&nbsp;&nbsp;
+            <asp:Button ID="Clear1" runat="server" OnClick="Clear_Click" Text="Clear" />
         </div>
     </div>
     <br />
@@ -70,6 +66,13 @@
         <div class="col-4"></div>
         <div class="col-8">
             <label id="MessageLabel1" runat="server" />
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-8">
+            <asp:GridView ID="PeopleGridView" runat="server"></asp:GridView>
         </div>
     </div>
 </asp:Content>
