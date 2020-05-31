@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Text.RegularExpressions;
 
 namespace WebFormsDemo
 {
@@ -14,7 +15,7 @@ namespace WebFormsDemo
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //MessageLabel.InnerHtml = "";
+            
         }
         protected Exception GetInnerException(Exception ex)
         {
@@ -36,6 +37,13 @@ namespace WebFormsDemo
             if (string.IsNullOrEmpty(SIN.Text))
             {
                 ShowMessage("SIN is required", "alert alert-info");
+                return false;
+            }
+            string input1 = SIN.Text;
+            Match match1 = Regex.Match(input1, @"[1-9][0-9][0-9][-][1-9][0-9][0-9][-][0-9][0-9][0-9]$");
+            if (!match1.Success)
+            {
+                ShowMessage("SIN must be like 123-456-789", "alert alert-info");
                 return false;
             }
             if (string.IsNullOrEmpty(Name.Text))
@@ -84,11 +92,17 @@ namespace WebFormsDemo
                 ShowMessage("Phone Number is required", "alert alert-info");
                 return false;
             }
+            string input2 = Phone.Text;
+            Match match2 = Regex.Match(input2, @"[(][1-9][0-9][0-9][)][ ][1-9][0-9][0-9][-][0-9][0-9][0-9][0-9]$");
+            if (!match2.Success)
+            {
+                ShowMessage("Phone Number must be like (123) 123-1234", "alert alert-info");
+                return false;
+            }
             return true;
         }
         protected void Add_Click(object sender, EventArgs e)
         {
-            //MessageLabel.InnerHtml = "SIN = " + SIN.Text + " Name = " + Name.Text;
             var isValid = Validation(sender, e);
             if (isValid)
             {
@@ -102,7 +116,6 @@ namespace WebFormsDemo
                 }
                 if (found)
                 {
-                    //MessageLabel.InnerHtml = "Record already exists.";
                     ShowMessage("Record already exists.", "alert alert-info");
                 }
                 else
