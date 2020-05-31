@@ -65,15 +65,11 @@
                                             style="color:black" runat="server">
                                             PersonForm
                                     </a>
-                                </div>
-                                <div class="dropdown-menu" aria-labelledby="navbarSubMenu">
                                     <a class="dropdown-item"
                                             href="~/Pages/Ex05.aspx"
                                             style="color:black" runat="server">
                                             Exercise 05
                                     </a>
-                                </div>
-                                <div class="dropdown-menu" aria-labelledby="navbarSubMenu">
                                     <a class="dropdown-item"
                                             href="~/Pages/InClass03.aspx"
                                             style="color:black" runat="server">
