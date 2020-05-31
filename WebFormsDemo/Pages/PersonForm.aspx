@@ -8,7 +8,7 @@
             This demo will show basic web form construction, validation, data collection and display.
         </div>
     </div>
-    <div class="row">
+    <%--<div class="row">
         <div class="col-md-12 text-left">
             <asp:ValidationSummary ID="ValidationSummary1" runat="server"
                  HeaderText="Please correct the following issues with your current data entry" />
@@ -48,7 +48,7 @@
                  SetFocusOnError="true" ControlToValidate="Phone" Display="None"
                  ValidationExpression="[1-9][0-9][0-9].[1-9][0-9][0-9].[0-9][0-9][0-9][0-9]"></asp:RegularExpressionValidator>
         </div>
-    </div>
+    </div>--%>
  
     <div class="row">
         <div class="col-md-4 text-right">
@@ -102,10 +102,16 @@
             <asp:LinkButton ID="Add" runat="server" OnClick="Add_Click">Add Person</asp:LinkButton>&nbsp;&nbsp;
             <asp:LinkButton ID="Clear" runat="server" CausesValidation="false" OnClick="Clear_Click">Clear</asp:LinkButton>
             <br/><br/>
-            <asp:Label ID="MessageLabel" runat="server" ></asp:Label>
+            <%--<asp:Label ID="MessageLabel" runat="server" ></asp:Label>--%>
             <br/><br/>
             <asp:GridView ID="PeopleGridView" runat="server"></asp:GridView>
         </div>
     </div>
-    <%--<script src="Scripts/bootwrap-freecode.js"></script>--%>
+    <br />
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-8">
+            <label id="MessageLabel1" runat="server" />
+        </div>
+    </div>
 </asp:Content>
