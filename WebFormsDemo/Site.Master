@@ -66,14 +66,14 @@
                                             PersonForm
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/Pages/Ex05.aspx"
+                                            href="~/Pages/EmployeeForm.aspx"
                                             style="color:black" runat="server">
-                                            Exercise 05
+                                            Exercise 05 - EmployeeForm
                                     </a>
                                     <a class="dropdown-item"
-                                            href="~/Pages/InClass03.aspx"
+                                            href="~/Pages/StudentForm.aspx"
                                             style="color:black" runat="server">
-                                            InClass 03
+                                            InClass 03 - StudentForm
                                     </a>
                                 </div>
                             </li>

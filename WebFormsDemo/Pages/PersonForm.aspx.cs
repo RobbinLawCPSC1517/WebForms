@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text.RegularExpressions;
 
-namespace WebFormsDemo
+namespace WebFormsDemo.Pages
 {
     public partial class PersonForm : System.Web.UI.Page
     {

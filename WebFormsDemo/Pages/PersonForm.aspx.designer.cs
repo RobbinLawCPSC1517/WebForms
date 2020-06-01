@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebFormsDemo
+namespace WebFormsDemo.Pages
 {
 
 

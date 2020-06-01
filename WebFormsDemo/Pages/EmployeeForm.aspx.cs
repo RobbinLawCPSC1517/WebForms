@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebFormsDemo.Pages
 {
-    public partial class InClass03 : System.Web.UI.Page
+    public partial class EmployeeForm : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

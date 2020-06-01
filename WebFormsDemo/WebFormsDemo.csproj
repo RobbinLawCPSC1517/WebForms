@@ -117,8 +117,8 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Pages\Ex05.aspx" />
-    <Content Include="Pages\InClass03.aspx" />
+    <Content Include="Pages\EmployeeForm.aspx" />
+    <Content Include="Pages\StudentForm.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -274,19 +274,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Ex05.aspx.cs">
-      <DependentUpon>Ex05.aspx</DependentUpon>
+    <Compile Include="Pages\EmployeeForm.aspx.cs">
+      <DependentUpon>EmployeeForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Ex05.aspx.designer.cs">
-      <DependentUpon>Ex05.aspx</DependentUpon>
+    <Compile Include="Pages\EmployeeForm.aspx.designer.cs">
+      <DependentUpon>EmployeeForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\InClass03.aspx.cs">
-      <DependentUpon>InClass03.aspx</DependentUpon>
+    <Compile Include="Pages\StudentForm.aspx.cs">
+      <DependentUpon>StudentForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\InClass03.aspx.designer.cs">
-      <DependentUpon>InClass03.aspx</DependentUpon>
+    <Compile Include="Pages\StudentForm.aspx.designer.cs">
+      <DependentUpon>StudentForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Pages\PersonForm.aspx.cs">
